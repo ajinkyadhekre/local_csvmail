@@ -1,0 +1,22 @@
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>{{#str}} firstname,local_csvmailstatus  {{/str}}</th>
+                <th>{{#str}} lastname,local_csvmailstatus  {{/str}}</th>
+                <th>{{#str}} email,local_csvmailstatus  {{/str}}</th>
+                <th>{{#str}} mailtime,local_csvmailstatus  {{/str}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#users}}
+            <tr>
+                <td>{{{ firstname }}}</td>
+                <td>{{{ lastname }}}</td>
+                <td>{{{ email }}}</td>
+                <td>{{{ mailtime }}}</td>
+            </tr>
+            {{/users}}
+        </tbody>
+    </table>
+</div>
